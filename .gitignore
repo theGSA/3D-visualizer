@@ -1,0 +1,17 @@
+
+.vs/Visualizer3D/v16/ipch/AutoPCH/143001298caf8795/VISUALIZER3D.ipch
+*.ipch
+*.db
+*.json
+*.sqlite
+.vs/3D-visualizer/v16/.suo
+.vs/Visualizer3D/v16/.suo
+*.lastbuildstate
+*.tlog
+*.txt
+*.log
+*.ilk
+*.recipe
+*.obj
+*.idb
+*.pdb

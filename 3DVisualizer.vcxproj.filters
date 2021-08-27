@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="SOIL2">
+      <UniqueIdentifier>{57ff7197-bbba-4325-ac3c-8c0709870e8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Visualizer3D.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Primitives.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Camera.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ObjLoader.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vec3.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="SOIL2\SOIL2.c">
+      <Filter>SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="SOIL2\image_DXT.c">
+      <Filter>SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="SOIL2\image_helper.c">
+      <Filter>SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="SOIL2\wfETC.c">
+      <Filter>SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Material.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Visualizer3D.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Primitives.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Camera.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ObjLoader.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vec3.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\SOIL2.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\image_DXT.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\image_helper.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\jo_jpeg.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\pkm_helper.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\pvr_helper.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stb_image.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stb_image_write.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stbi_DDS.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stbi_DDS_c.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stbi_ext.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stbi_ext_c.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stbi_pkm.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stbi_pkm_c.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stbi_pvr.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\stbi_pvr_c.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL2\wfETC.h">
+      <Filter>SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Material.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
