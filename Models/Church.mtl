@@ -1,0 +1,9 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl church
+Ka 0.000000 0.000000 0.000000
+Kd 0.407843 0.403922 0.407843
+Ks 0.330000 0.330000 0.330000
+map_Kd Texture4K/Church (1)_1001_BaseColor.png

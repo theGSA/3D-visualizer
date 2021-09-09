@@ -16,12 +16,15 @@ public:
 class Mesh
 {
 public:
-	Mesh() {};
+	Mesh():texID(0), materialID(-1) {};
 	Mesh(std::string strName) { name = strName; };
 	~Mesh() {};
 	std::vector<vec3f> vCoords, tCoords, nCoords;
 	std::vector<Face> faces;
 	std::string name;
+	std::string materialName;
+	unsigned texID;
+	int materialID;
 };
 
 class ObjLoader
@@ -32,13 +35,22 @@ public:
 
 	std::vector<Mesh> Meshs;
 	unsigned texID;
+	GLuint GetTotalMeshs() { return Meshs.size(); };
+	GLuint GetTotalFaces();
+	GLuint GetTotalVertexCoord();
+	GLuint GetTotalTextCoord();
+	GLuint GetTotalNormCoord();
+	bool m_bRotate;
+	float m_fRotateVel;
+	float m_fAngleRotate;
+	
+	std::vector<Material> materials;
 private:
 	void CreateTexture();
 	void ParseFile();
 	void ParseMaterial();
 	std::string m_filename;
 	std::string materialFileName;
-	std::vector<Material> materials;
 
 	FILE* m_arq;
 	int nVertices, nNormals, nTex;

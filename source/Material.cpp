@@ -1,6 +1,7 @@
 #include "Material.h"
 
-Material::Material()
+Material::Material():
+	SpecularDensity(0)
 {
 
 }

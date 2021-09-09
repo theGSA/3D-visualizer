@@ -150,11 +150,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_glut.cpp" />
+    <ClCompile Include="imgui\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="SOIL2\image_DXT.c" />
     <ClCompile Include="SOIL2\image_helper.c" />
     <ClCompile Include="SOIL2\SOIL2.c" />
     <ClCompile Include="SOIL2\wfETC.c" />
     <ClCompile Include="source\Camera.cpp" />
+    <ClCompile Include="source\Light.cpp" />
     <ClCompile Include="source\Material.cpp" />
     <ClCompile Include="source\ObjLoader.cpp" />
     <ClCompile Include="source\Primitives.cpp" />
@@ -163,6 +171,14 @@
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_glut.h" />
+    <ClInclude Include="imgui\imgui_impl_opengl2.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="SOIL2\image_DXT.h" />
     <ClInclude Include="SOIL2\image_helper.h" />
     <ClInclude Include="SOIL2\jo_jpeg.h" />
@@ -181,6 +197,7 @@
     <ClInclude Include="SOIL2\stb_image_write.h" />
     <ClInclude Include="SOIL2\wfETC.h" />
     <ClInclude Include="source\Camera.h" />
+    <ClInclude Include="source\Light.h" />
     <ClInclude Include="source\Material.h" />
     <ClInclude Include="source\ObjLoader.h" />
     <ClInclude Include="source\Primitives.h" />
