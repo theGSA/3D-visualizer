@@ -3,20 +3,20 @@ Programa criado para obtenção da terceira nota de Computação Grafica.
 o programa carrega arquivos do tipo obj e projeta a visualização 3d do modelo.
 
 # libs externas
-imgui (interface gráfica, botões etc..)
-SOIL2 (carregar arquivos de imagem (jpg, png e etc..))
+- imgui (interface gráfica, botões etc..)
+- SOIL2 (carregar arquivos de imagem (jpg, png e etc..))
 # suporte
-carrega arquivos .obj
-Rotação
-Translação
-Escala
-Wireframe mode
-Texturas
-Iluminação
+- carrega arquivos .obj
+- Rotação
+- Translação
+- Escala
+- Wireframe mode
+- Texturas
+- Iluminação
 
 # compilação
-o programa foi compilado usando Visual Studio 2019 v.142
-abra o arquivo Visualizer3D.sln e compile
+- o programa foi compilado usando Visual Studio 2019 v.142
+- abra o arquivo Visualizer3D.sln e compile
 
 # mode de uso
 - abra o cmd na pasta onde está o Visualizer3D.exe
