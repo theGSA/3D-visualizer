@@ -369,12 +369,16 @@ void Visualizer3D::DrawObject()
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 				boundTexture = object->Meshs[i].texID;
 			}
-			/*if (object->Meshs[i].materialID >= 0) {
-				glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, (float*)&object->materials[object->Meshs[i].materialID].ambient);
+			if (object->Meshs[i].materialID >= 0) {
+				/*glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, (float*)&object->materials[object->Meshs[i].materialID].ambient);
 				glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, (float*)&object->materials[object->Meshs[i].materialID].difuse);
 				glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, (float*)&object->materials[object->Meshs[i].materialID].specular);
-				glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, (float*)&object->materials[object->Meshs[i].materialID].SpecularDensity);
-			}*/
+				glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, (float*)&object->materials[object->Meshs[i].materialID].SpecularDensity);*/
+				glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, light->m_lightAmbient);
+				glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, (float*)&objColor);
+				glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, light->m_lightDifuse);
+				//glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, 30.0f );
+			}
 			if(bMulticolor )
 				glColor3fv(color[i % 6]);
 			
@@ -390,7 +394,7 @@ void Visualizer3D::DrawObject()
 					glTexCoord2f(object->Meshs[i].tCoords[tindex - 1].x, 1.0f - object->Meshs[i].tCoords[tindex - 1].y);
 				if(nindex > 0)
 					glNormal3f(object->Meshs[i].nCoords[nindex - 1].x, object->Meshs[i].nCoords[nindex - 1].y, object->Meshs[i].nCoords[nindex - 1].z);
-				if(tindex > 0)
+				if(vindex > 0)
 					glVertex3f(object->Meshs[i].vCoords[vindex - 1].x, object->Meshs[i].vCoords[vindex - 1].y, object->Meshs[i].vCoords[vindex - 1].z);
 			}
 			glEnd();
@@ -416,10 +420,13 @@ void Visualizer3D::run(int argc, char** argv)
 	glEnable(GL_AUTO_NORMAL);
 	glClearColor(0.0f, 1.0f, 1.0f, 1.0f);
 	glEnable(GLUT_MULTISAMPLE);
-	if (argc > 1)
+	if (argc > 1) {
 		object = new ObjLoader(argv[1]);
-	else{
-		object = new ObjLoader("./Models/mario.obj");
+		if (object)
+			glutSetWindowTitle(argv[1]);
+	}
+	else {
+		object = new ObjLoader("./Models/leon.obj");
 	}
 	glutDisplayFunc(Display);
 	glutReshapeFunc(Reshape);
