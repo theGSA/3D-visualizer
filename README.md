@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/40173977/162535359-6408329f-95ef-4633-bb57-e24b69056aa7.png)
+
+
 # 3D-visualizer
 Programa criado para obtenção da terceira nota de Computação Grafica.
 o programa carrega arquivos do tipo obj e projeta a visualização 3d do modelo.
@@ -20,7 +23,7 @@ o programa carrega arquivos do tipo obj e projeta a visualização 3d do modelo.
 
 # mode de uso
 - abra o cmd na pasta onde está o Visualizer3D.exe
-- e digite o comando sem aspas "Visualizer3D.exe ./pasta/onde/esta/object.obj
-- as texturas deve seguir o expecificado pelo .mtl do obj
-  no entando na pasta onde está o object.obj deve ter uma pasta texturas
+- e digite o comando sem aspas "Visualizer3D.exe ./pasta/onde/esta/nome_do_objeto.obj
+- as texturas devem seguir o expecificado pelo .mtl do .obj
+  no entando na pasta onde está o nome_do_arquivo.obj deve ter uma pasta texturas
 - se não houver linha de comando o programa abre um modelo 3d na pasta Models (leon.obj)
